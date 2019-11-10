@@ -14,7 +14,7 @@ export class ProductPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+    this._productService.getAlbum(1).subscribe(response => this.albumInfo = response);
   }
 
 }
